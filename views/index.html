@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Glitch ❤️ Twilio</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Link our CSS files -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- Link our required JS files -->
+    <script src="/client.js" defer></script>
+    
+  </head>
+  <body>
+    <div class="container">
+    
+      <header>
+        <h1>
+          Text a questions (469)&#8209;351&#8209;6851
+        </h1>        
+      </header>
+
+      <main>
+        <div class="questions">
+          <form method="POST" action="/form">
+          <p>
+            You can also submit them here:
+          </p>
+          <input name="question" type="text" placeholder="Ask your question here!" aria-labelledby="submit-question" required>
+          <button type="submit" id="submit-question">Submit Question</button>
+        </form>
+          <!-- Success/error messages will be displayed here when someone submits a question via the form. -->
+          <section class="info">
+            <p id="info-message"></p>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
