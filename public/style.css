@@ -3,29 +3,29 @@
 }
 
 body {
-  background: #f2f2f2;
-  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   margin: 0;
   padding: 0;
+  background: #f2f2f2;
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
 }
 
 .container {
-  align-items: center;
   display: flex;
+  align-items: center;
   flex-flow: column nowrap;
-  margin: 0 auto;
+  justify-content: center;
   width: 100%;
   min-height: 100vh;
-  justify-content: center;
+  margin: 0 auto;
 }
 
 header {
-  background: #000;
-  color: white;
+  width: 100%;
   margin: 0;
   padding: 0;
   text-align: center;
-  width: 100%;
+  color: white;
+  background: #000;
 }
 
 header > h1 {
@@ -34,25 +34,26 @@ header > h1 {
 }
 
 main {
-  align-items: center;
   display: flex;
+  align-items: center;
   flex: 1;
   flex-flow: column nowrap;
   justify-content: center;
-  margin: 0 auto;
-  max-width: 1000px;
   width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .questions {
-  border-radius: 0.5em;
-  align-items: center;
   display: flex;
+  align-items: center;
   flex-flow: column nowrap;
-  justify-contents: space-between;
-  margin: 0;
-  max-width: 48rem;
   width: 100%;
+  max-width: 48rem;
+  margin: 0;
+  border-radius: 0.5em;
+
+  justify-contents: space-between;
 }
 
 .flipdown {
@@ -60,13 +61,13 @@ main {
 }
 
 .questions h1 {
-  color: #583B93;
   margin: 0.5em 0;
+  color: #583B93;
 }
 
 .questions-block {
-  margin: 0 auto;
   width: 100%;
+  margin: 0 auto;
 }
 
 .center {
@@ -78,8 +79,8 @@ main {
 }
 
 #list-questions > li {
-  font-size: 1.2em;
   margin-bottom: 0.5em;
+  font-size: 1.2em;
 }
 
 .selected {
@@ -91,18 +92,18 @@ main {
 }
 
 .struckthrough {
-  color: grey;
   text-decoration: line-through;
+  color: grey;
 }
 
 form {
-  background-color: #25292d;
-  background: linear-gradient(90deg, rgba(41,45,48,1) 0%, rgba(34,37,41,1) 100%);
-  border-radius: 3px;
-  color: white;
-  padding: 1rem;
   display: inline-block;
   width: 100%;
+  padding: 1rem;
+  color: white;
+  border-radius: 3px;
+  background: linear-gradient(90deg, rgba(41,45,48,1) 0%, rgba(34,37,41,1) 100%);
+  background-color: #25292d;
 }
 
 p {
@@ -111,29 +112,29 @@ p {
 
 input {
   display: block;
-  line-height: 1.5em;
+  width: 100%;
   margin: .5rem 0;
   padding: .5rem 1rem;
-  width: 100%;
   border: none;
   border-radius: .25rem;
   font-size: 1.5rem;
+  line-height: 1.5em;
 }
 
 button {
-  font-size: 1rem;
+  float: right;
   padding: .5rem 1rem;
+  cursor: pointer;
+  color: white;
+  border:none;
   border-radius: .25rem;
   background-color: #394146;
-  border:none;
-  color: white;
-  cursor: pointer;
-  float: right;
+  font-size: 1rem;
 }
 
 button:hover {
-  background-color: #FFF;
   color: #394146;
+  background-color: #FFF;
 }
 
 button:active {
@@ -145,8 +146,7 @@ button:active {
 }
 
 footer {
-  font-size: smaller;
   padding: 1.5rem 0;
   text-align: center;
-  width: 95%;
+  font-size: smaller;
 }
